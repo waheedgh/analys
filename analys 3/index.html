@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  Om du läser det här har du tryckt Ctrl+U (eller Cmd+Option+U).  ║
+    ║  Välkommen till lager 3, källkoden.                              ║
+    ║                                                                  ║
+    ║  Sidan har tre lager:                                            ║
+    ║    1. Texten. Det enda som ska bedömas.                          ║
+    ║       Fungerar utan både JavaScript och CSS.                     ║
+    ║    2. Retro-detaljerna du ser när du scrollar (terminal, CRT,    ║
+    ║       dithering). De sitter bara på föremål, aldrig på texten.   ║
+    ║    3. Det här. Plus något i konsolen (F12) och en klassisk       ║
+    ║       tangentkombination från 1986.                              ║
+    ║                                                                  ║
+    ║  Inga cookies, ingen analys, inga externa anrop. Kolla gärna     ║
+    ║  fliken Nätverk: allt laddas från samma mapp.                    ║
+    ╚══════════════════════════════════════════════════════════════════╝
+  -->
+
+  <title>Waheed Ghairat, Webbteknik</title>
+
+  <meta name="robots" content="noindex">
+
+  <meta name="color-scheme" content="dark light">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%230b0f0c'/%3E%3Crect x='2' y='1' width='3' height='6' fill='%237fe08e'/%3E%3C/svg%3E">
+
+  <link rel="preload" href="fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#analys">Hoppa till texten</a>
+
+  <header class="terminal" aria-hidden="true">
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-title">~/analys: zsh</span>
+    </div>
+    <div class="terminal-body">
+      <div class="binary">01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100001 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100001 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100001 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100001 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100001 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100001</div>
+      <p class="terminal-line"><span class="prompt">$</span> echo "hello, world!!"</p>
+      <p class="terminal-hello">hello, world!!<span class="cursor"></span></p>
+    </div>
+    <div class="dither-ramp"></div>
+  </header>
+
+  <main>
+    <article id="analys" class="analysis" aria-labelledby="titel">
+
+      <header class="title-block">
+        <h1 id="titel">Individuell Analys</h1>
+
+        <p class="byline">
+          <span>Waheed Ghairat</span>
+          <span class="byline-sep" aria-hidden="true">/</span>
+          <span>Webbteknik</span>
+          <span class="byline-sep" aria-hidden="true">/</span>
+          <time datetime="2026-10-10">10 oktober 2026</time>
+        </p>
+      </header>
+
+      <div class="layout">
+
+        <aside class="meta" aria-label="Om texten">
+
+          <dl class="meta-stats">
+            <div>
+              <dt>Ord</dt>
+              <dd data-wordcount>1 904</dd>
+            </div>
+            <div>
+              <dt>Lästid</dt>
+              <dd><span data-readtime>10</span> min</dd>
+            </div>
+          </dl>
+
+          <div class="meta-block">
+            <h2 class="meta-heading" id="taggar-rubrik">Taggar</h2>
+            <ul class="tags" aria-labelledby="taggar-rubrik">
+              <li>REST API</li>
+              <li>SQL</li>
+              <li>Tracking</li>
+              <li>Python</li>
+            </ul>
+          </div>
+
+          <nav class="meta-block toc" aria-labelledby="toc-rubrik">
+            <h2 class="meta-heading" id="toc-rubrik">Innehåll</h2>
+            <ol>
+              <li><a href="#avsnitt-1">Hur lösningen fungerar</a></li>
+              <li><a href="#avsnitt-2">Kod och funktionalitet</a></li>
+              <li><a href="#avsnitt-3">Tracking och digital marknadsföring</a></li>
+              <li><a href="#avsnitt-4">Reflektion över helhetslösningen</a></li>
+              <li><a href="#avsnitt-5">Python och dataanalys</a></li>
+            </ol>
+          </nav>
+
+          <details class="meta-block tracking">
+            <summary>
+              <span class="tracking-label">Simulerad tracking</span>
+              <span class="tracking-count" data-event-count>0</span>
+            </summary>
+            <p class="tracking-note">
+              Här visas vad ett analysverktyg skulle registrera medan du läser.
+              Inget lämnar din webbläsare: öppna fliken Nätverk i utvecklarverktygen och se själv.
+            </p>
+            <noscript><p class="tracking-note">Demon kräver JavaScript.</p></noscript>
+            <ol class="tracking-log" data-tracking-log aria-live="off"></ol>
+          </details>
+        </aside>
+
+        <div class="prose">
+
+          <section id="avsnitt-1" aria-labelledby="h-1">
+            <h2 id="h-1"><span class="num" aria-hidden="true">01</span> Hur lösningen fungerar</h2>
+
+            <p>GymFlow är våran webbshop för träningsprodukter som vi har byggt i en grupp på fem personer. Lösningen består av tre delar: en klient i webbläsaren, en server med ett REST API och en SQLite-databas. Webbläsaren pratar aldrig direkt med databasen. Allt går via API:et.</p>
+            <figure class="crt" aria-label="Flödesdiagram: klient, REST API och databas">
+              <div class="crt-screen">
+                <div class="flow" data-flow>
+                  <div class="flow-node">
+                    <span class="flow-tag" aria-hidden="true">CLIENT</span>
+                    <strong class="flow-name">Klient</strong>
+                    <span class="flow-tech">HTML, CSS, JavaScript</span>
+                  </div>
+                  <div class="flow-link">
+                    <span class="flow-proto">HTTP + JSON</span>
+                    <span class="packet packet-req" aria-hidden="true"></span>
+                    <span class="packet packet-res" aria-hidden="true"></span>
+                  </div>
+                  <div class="flow-node">
+                    <span class="flow-tag" aria-hidden="true">SERVER</span>
+                    <strong class="flow-name">REST API</strong>
+                    <span class="flow-tech">Node.js + Express</span>
+                  </div>
+                  <div class="flow-link">
+                    <span class="flow-proto">SQL</span>
+                    <span class="packet packet-req" aria-hidden="true"></span>
+                    <span class="packet packet-res" aria-hidden="true"></span>
+                  </div>
+                  <div class="flow-node">
+                    <span class="flow-tag" aria-hidden="true">DB</span>
+                    <strong class="flow-name">Databas</strong>
+                    <span class="flow-tech">SQLite</span>
+                  </div>
+                </div>
+              </div>
+            </figure>
+            <p>Klienten har vi byggt med HTML, CSS och JavaScript. I själva <code>index.html</code> finns en header med meny, ett tomt <code>&lt;main id="app"&gt;</code> och en footer och vi använde semantiska taggar som header, nav, main, section och article. Vår CSS ligger i en gemensam <code>style.css</code>. Allt innehåll ritas in i main med JavaScript, och det är det som gör sidan till en SPA (Single Page Application). När man klickar på en länk i menyn, till exempel <code>#products</code>, ändras bara delen efter # i adressen. <code>router.js</code> läser av den med <code>location.hash</code>, delar upp den med <code>split(“/”)</code> och kör rätt sidfunktion. Sidan laddas aldrig om. Bara innehållet i main byts ut.</p>
+            <p>Servern är skriven i Node.js med Express och ligger i <code>server/app.js</code>. Klienten använder fyra routes där: <code>GET /api/products</code>, <code>GET /api/products/cheapest</code>, <code>GET /api/products/:product_id</code> och <code>POST /api/orders</code>. <code>GET</code> hämtar data och <code>POST</code> sparar en beställning. I databasen finns det två tabeller, products och orders.</p>
+            <p>Det blev mest tydligt för mig när jag följde produktlistan hela vägen. <code>products.js</code> skickar ett anrop med <code>fetch</code> till <code>/api/products</code>. Servern kör <code>SELECT * FROM products</code> får tillbaka raderna och skickar dem vidare till klienten som JSON. Klienten loopar sedan igenom listan och bygger ett article-element per produkt. Eftersom svaret tar en liten stund använder vi <code>async</code> och <code>await</code>, så att koden väntar på datan innan sidan ritas ut. En beställning går åt andra hållet. Kassaformuläret skickar kunduppgifterna, varukorgen och totalsumman som JSON med <code>POST</code>, och servern kör <code>INSERT INTO orders</code> och svarar med statuskod 201, som betyder att något har skapats.</p>
+            <p>Alla SQL-delar som krävdes finns med. <code>SELECT</code> hämtar produkter, <code>WHERE id = ?</code> hämtar en enskild produkt, <code>ORDER BY price</code> sorterar på pris, <code>LIMIT 3</code> visar de tre billigaste produkterna på startsidan och <code>INSERT INTO</code> sparar beställningar. Frågetecknet är en platshållare. Värdet skickas separat i stället för att klistras in i SQL-texten, och det skyddar mot SQL-injektion. Sorteringen bygger på samma tanke. Klienten skickar bara <code>?sort=price</code> och <code>&amp;order=asc</code> eller <code>&amp;order=desc</code>, och det är servern som själv lägger till <code>ORDER BY price</code>. Användaren kan alltså inte skicka in egen SQL.</p>
+          </section>
+
+          <section id="avsnitt-2" aria-labelledby="h-2">
+            <h2 id="h-2"><span class="num" aria-hidden="true">02</span> Kod och funktionalitet</h2>
+
+            <p>Själv har jag främst jobbat med databasen och kopplingen till servern, HTML-strukturen, Google Tag Manager och git, och det är databasen jag vill gå in på först. I början låg våra produkter i en vanlig array i en JavaScript-fil. Det räckte för att testa att SPA:n fungerade, men det var ingen databas. Jag kopplade därför servern till SQLite enligt mallen vi fick, flyttade in produkterna i tabellen products och gjorde om produktsidorna så att de hämtar data med <code>fetch</code>. Sen la jag till tabellen orders, POST-routen och kassaformuläret och efter det sorteringen och de billigaste produkterna på startsidan. Sorteringen och varukorgen i localStorage är våra fördjupningar.</p>
+            <p>En enskild produkt hämtas såhär:</p>
+            <figure class="code">
+              <figcaption><span class="code-file">server/app.js</span><span class="code-lang" aria-hidden="true">js</span></figcaption>
+              <pre><code>const query = db.prepare("SELECT * FROM products WHERE id = ?");
+const product = query.get(id);</code></pre>
+            </figure>
+            <p>Id:t kommer från adressen, till exempel <code>/api/products/3</code>. Kan det inte tolkas som ett nummer svarar servern med 400, och om ingen produkt har det id:t blir svaret 404.</p>
+            <p>Det problem jag minns bäst handlade om smakerna. De sparas som text i kolumnen <code>variants</code>, separerade med kommatecken, till exempel “Jordgubb/Mango, Blue Raspberry, Citron Lime”. I <code>products.js</code> delas texten upp med <code>split(“,”)</code> och blir en lista och en rullista. Jordgubb och mango är en enda smak, men eftersom den var skriven med kommatecken blev den två val i rullistan. Koden gjorde precis vad den skulle men felet låg i datan. Vi löste det genom att skriva “Jordgubb/Mango” med snedstreck, eftersom koden bara delar vid kommatecken. Det var en snabb lösning, men ju mer jag har tänkt på det, desto tydligare ser jag svagheten i hur vi byggde det. I en riktig butik blir det svårt att söka på en viss smak, och en sökning med <code>LIKE ‘%Mango%’</code> skulle t,ex också träffa Jordgubb/Mango. Det finns heller ingen plats att spara lager per smak. En egen tabell för smaker, kopplad till produkten med ett <code>product_id</code>, hade varit bättre.</p>
+            <p>Databasfilen ställde också till det i git. <code>database.db</code> är en binär fil, och git kan inte slå ihop två personers ändringar i en sådan fil. Vi bestämde därför att bara jag ändrar och pushar databasen, medan de andra hämtar den med <code>git pull</code>. För att se att beställningarna faktiskt sparades öppnade jag databasen i Letos. Första gången glömde jag ordet <code>ORDER</code> i min query och fick ett syntaxfel. Med <code>SELECT * FROM orders ORDER BY id DESC</code> hamnade den senaste ordern överst, och då såg jag att hela flödet fungerade.</p>
+          </section>
+
+          <section id="avsnitt-3" aria-labelledby="h-3">
+            <h2 id="h-3"><span class="num" aria-hidden="true">03</span> Tracking och digital marknadsföring</h2>
+
+            <p>Trackingen är en annan del som jag har lagt tid på. Vi mäter två händelser: <code>add_to_cart</code> när någon klickar på “Lägg i varukorg” och <code>nav_click</code> när någon klickar i menyn. Här fokuserar jag på <code>add_to_cart</code>.</p>
+            <p>GTM-koden ligger i <code>index.html</code>, ett script i head och en noscript-del i body. Den laddar Tag Manager och skapar <code>dataLayer</code>, en lista som GTM lyssnar på. När någon klickar på knappen kör <code>router.js</code> det här:</p>
+            <figure class="code">
+              <figcaption><span class="code-file">router.js</span><span class="code-lang" aria-hidden="true">js</span></figcaption>
+              <pre><code>window.dataLayer.push({
+  event: "add_to_cart",
+  product_name: name,
+  product_flavor: flavor,
+  product_price: price
+});</code></pre>
+            </figure>
+            <p>I GTM har vi en utlösare av typen anpassad händelse som reagerar på exakt namnet <code>add_to_cart</code>. En period så låg exempelkoden vi fick i <code>index.html</code>, med fel container-ID. Datan skickades alltså till en container som vi inte hade tillgång till. Jag skapade en egen container, bytte ID:t på båda ställena och lade till push-anropet enligt Linus instruktioner. Sedan testade vi med förhandsgranskningen i GTM (Tag Assistant) mot <code>localhost:3000</code>. Både <code>add_to_cart</code> och <code>nav_click</code> dök upp, och i datalagret syntes produktnamn, smak och pris. Men det stod också att inga taggar hade utvärderats. Där blev jag förvirrad, för jag trodde att det räckte att eventet kom fram. Det var först då jag förstod hur GTM hänger ihop. Händelsen är det som sker på sidan. Utlösaren säger när GTM ska reagera. Taggen är det som faktiskt görs, till exempel att skicka datan till Google Analytics. Utan en tagg så händer ingenting.</p>
+            <p>Varför just <code>add_to_cart</code>? För att det är en tydlig köpsignal. Kunden har gått från att titta till att vilja köpa. Jämför man antalet <code>add_to_cart</code> med antalet beställningar kan man se hur många som försvinner på vägen. Om många lägger i varukorgen men få köper ligger problemet troligen i kassan eller i priset, inte i annonserna som drog in trafiken. Eftersom smaken följer med skulle man också kunna se vilka smaker som är populärast. Det jag tycker är mest intressant är ändå retargeting. Om datan skickas till GA4 och GA4 kopplas till Google Ads kan man bygga en målgrupp av personer som lagt något i varukorgen utan att köpa, och visa annonser för just dem. <code>nav_click</code> säger mindre, men den visar vilka delar av menyn besökarna använder och alltså vad de letar efter.</p>
+            <p>Om jag ska vara ärlig är vår tracking ganska begränsad. Vi har sett att händelserna kommer fram i förhandsgranskningen men eftersom vi inte har kopplat någon GA4-tagg sparas datan ingenstans. Parameternamnen hittade vi dessutom på själva. GA4 har en färdig standard för <code>add_to_cart</code>, där produkterna skickas i en lista som heter <code>items</code> med fält som <code>item_id</code>, <code>item_variant</code>, <code>price</code> och <code>quantity</code>. Hade vi följt den hade det varit enklare att använda GA4:s färdiga e-handelsrapporter. Vi saknar också ett purchase-event efter en lyckad beställning, och utan det kan GA4 inte räkna ut hur stor andel av besökarna som faktiskt köper.</p>
+          </section>
+
+          <section id="avsnitt-4" aria-labelledby="h-4">
+            <h2 id="h-4"><span class="num" aria-hidden="true">04</span> Reflektion över helhetslösningen</h2>
+
+            <p>När jag ser tillbaka på projektet som helhet var det strukturen med en router och en fil per vy i mappen pages som fungerade bäst. Man hittade rätt kod direkt och arbetet blev enkelt att dela upp. Git var det svåraste och där gjorde vi en del misstag. I början gjorde flera av oss egna versioner av samma fil, <code>products.js</code> och vi fick merge-konflikter som tog tid att fixa. På datorn jag jobbade på fick jag felet “Author identity unknown”, och jag skrev fel kommando ett par gånger innan namn och e-post var rätt inställda med <code>git config</code>. Först nu när jag tittar tillbaka ser jag att mappen <code>node_modules</code> följer med i git, över 1200 filer eftersom vi aldrig lade till en <code>.gitignore</code>. Nästa gång lägger jag in den första dagen.</p>
+            <p>I början av kursen såg jag en webbplats som en enda sak. Nu ser jag flera delar som skickar data mellan sig. Jag trodde också att tracking var något mer avancerat än vad det är. I grunden är det bara JavaScript som skickar data på ungefär samma sätt som när klienten skickar en beställning till servern.</p>
+            <p>Varukorgen är ett val där jag har ändrat uppfattning. En i vår grupp byggde en varukorg i backend men vi valde att behålla localStorage. Det är enklare kräver inget konto och varukorgen finns kvar om man laddar om sidan. Då kändes det självklart men när jag tänker på det som marknadsförare så ser jag nackdelen tydligare. Varukorgen finns bara i kundens webbläsare så butiken kan inte se övergivna varukorgar och kan inte skicka ett påminnelsemejl, något som många e-handlare använder för att få tillbaka kunder (retention). För vårt projekt tycker jag fortfarande att localStorage var rätt. I en riktig butik hade jag valt annorlunda.</p>
+            <p>Det finns fler saker jag skulle ändra och flera av dem handlar om att vi fokuserade på att få saker att fungera snarare än på att de skulle vara säkra. Kassan kontrollerar inte serverns svar, så varukorgen töms och kunden får ett tack även om servern svarar med ett fel. En kontroll av <code>response.ok</code> skulle kunna lösa det. Totalsumman räknas ut i webbläsaren och sparas utan kontroll och de betyder att den som ändrar priset i localStorage i teorin skulle kunna beställa för en krona. Servern borde hämta priserna från databasen och räkna själv. Produkterna i en order sparas dessutom som JSON-text i en enda kolumn, så det går inte enkelt att fråga med SQL vilken produkt som säljer bäst. Det är ju just den frågan en marknadsförare helst vill ha svar på. En egen tabell, <code>order_items</code>, skulle lösa det.</p>
+            <p>Som Digital Marketing Manager kommer man inte skriva koden själv oftast, om man inte vill det. Men jag behöver förstå hur datan uppstår. Om jag t,ex beställer tracking av en utvecklare måste jag kunna säga vilka händelser och parametrar jag vill ha och själv kontrollera i Tag Assistant att de kommer fram. Fel data leder till fel beslut till exempel att budgeten läggs på en kampanj som ser bra ut men inte säljer.</p>
+          </section>
+
+          <section id="avsnitt-5" aria-labelledby="h-5">
+            <h2 id="h-5"><span class="num" aria-hidden="true">05</span> Python och dataanalys</h2>
+
+            <p>Till sist något om Python och dataanalys som vi bara berört lite kort i kursen. Python är ett programmeringsspråk som används mycket för dataanalys. I Jupyter Notebook kör man koden i små steg och ser resultatet direkt blandat med text och diagram. Pandas används för att arbeta med data i tabeller, lite som Excel fast för mycket större mängder, och NumPy används för snabba beräkningar med siffror.</p>
+            <p>Data behöver ofta rensas från dubbletter, fel och gamla värden innan den kan analyseras och ett exempel på det hittade jag i vår egen databas. I tabellen orders finns en testorder som lades innan varukorgen hade antal. Där står samma produkt tre gånger i stället för en gång med antal 3, och smaken heter Strawberry, som inte längre finns i butiken. Räknar man på sådan data utan att rensa den blir resultatet missvisande. Testordern borde egentligen tas bort helt.</p>
+            <p>För en Digital Marketing Manager handlar det om att data kommer från många källor, som Google Ads, GA4 och butikens egna ordrar. Med Python och Pandas kan man slå ihop dem och se vilka kampanjer som ger försäljning och inte bara klick.</p>
+          </section>
+
+        </div>      </div>    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Waheed Ghairat, Webbteknik. Byggd med HTML, CSS och lite JavaScript. Inga cookies, ingen spårning.</p>
+    <!-- ↑ ↑ ↓ ↓ ← → ← → B A -->
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
